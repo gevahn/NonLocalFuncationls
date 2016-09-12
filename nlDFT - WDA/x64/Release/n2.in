@@ -1,0 +1,28 @@
+$molecule
+0 1
+N 1 0 0
+N 0 0 0
+$end
+$rem
+job_type opt
+basis 6-31g*
+exchange PW86
+$end 
+ 
+@@@ 
+ 
+$molecule
+read
+$end
+$rem
+scf_guess read
+max_scf_cycles 0 
+basis 6-31g*
+exchange rPW86
+correlation PBE
+nl_correlation vv10
+nl_vv_b 590
+nl_vv_c 93
+nl_grid 000050000194
+xc_grid 000075000302
+$end

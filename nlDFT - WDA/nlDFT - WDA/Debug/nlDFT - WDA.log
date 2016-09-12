@@ -1,0 +1,56 @@
+﻿Build started 6/19/2014 6:51:38 PM.
+     1>Project "C:\Users\gevah_000\Dropbox\Nadav\Work\MIT\non local funcationals\nlDFT - WDA\nlDFT - WDA\nlDFT - WDA.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         F:\VS\VC\bin\CL.exe /c /I"C:\Users\gevah_000\Downloads\armadillo-4.300.8\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D ARMA_USE_LAPACK /D ARMA_USE_BLAS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "..\..\..\..\..\..\..\Downloads\armadillo-4.300.8\examples\example1.cpp"
+         example1.cpp
+     1>cl : Command line warning D9028: minimal rebuild failure, reverting to normal build
+       Link:
+         F:\VS\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\gevah_000\Dropbox\Nadav\Work\MIT\non local funcationals\nlDFT - WDA\Debug\nlDFT - WDA.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Users\gevah_000\Downloads\armadillo-4.300.8\examples\lib_win64" /LIBPATH:"C:\Users\gevah_000\Downloads\armadillo-4.300.8\lib" lapack_win64_MT.lib blas_win64_MT.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\gevah_000\Dropbox\Nadav\Work\MIT\non local funcationals\nlDFT - WDA\Debug\nlDFT - WDA.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\gevah_000\Dropbox\Nadav\Work\MIT\non local funcationals\nlDFT - WDA\Debug\nlDFT - WDA.lib" /MACHINE:X86 Debug\example1.obj
+         Debug\WDA.obj
+     1>WDA.obj : error LNK2005: _main already defined in example1.obj
+     1>example1.obj : error LNK2019: unresolved external symbol _sdot_ referenced in function "double __cdecl arma::blas::dot<double>(unsigned int,double const *,double const *)" (??$dot@N@blas@arma@@YANIPBN0@Z)
+     1>WDA.obj : error LNK2001: unresolved external symbol _sdot_
+     1>example1.obj : error LNK2019: unresolved external symbol _ddot_ referenced in function "double __cdecl arma::blas::dot<double>(unsigned int,double const *,double const *)" (??$dot@N@blas@arma@@YANIPBN0@Z)
+     1>WDA.obj : error LNK2001: unresolved external symbol _ddot_
+     1>example1.obj : error LNK2019: unresolved external symbol _sgemv_ referenced in function "void __cdecl arma::blas::gemv<double>(char const *,int const *,int const *,double const *,double const *,int const *,double const *,int const *,double const *,double *,int const *)" (??$gemv@N@blas@arma@@YAXPBDPBH1PBN21212PAN1@Z)
+     1>WDA.obj : error LNK2001: unresolved external symbol _sgemv_
+     1>example1.obj : error LNK2019: unresolved external symbol _dgemv_ referenced in function "void __cdecl arma::blas::gemv<double>(char const *,int const *,int const *,double const *,double const *,int const *,double const *,int const *,double const *,double *,int const *)" (??$gemv@N@blas@arma@@YAXPBDPBH1PBN21212PAN1@Z)
+     1>WDA.obj : error LNK2001: unresolved external symbol _dgemv_
+     1>example1.obj : error LNK2019: unresolved external symbol _cgemv_ referenced in function "void __cdecl arma::blas::gemv<double>(char const *,int const *,int const *,double const *,double const *,int const *,double const *,int const *,double const *,double *,int const *)" (??$gemv@N@blas@arma@@YAXPBDPBH1PBN21212PAN1@Z)
+     1>WDA.obj : error LNK2001: unresolved external symbol _cgemv_
+     1>example1.obj : error LNK2019: unresolved external symbol _zgemv_ referenced in function "void __cdecl arma::blas::gemv<double>(char const *,int const *,int const *,double const *,double const *,int const *,double const *,int const *,double const *,double *,int const *)" (??$gemv@N@blas@arma@@YAXPBDPBH1PBN21212PAN1@Z)
+     1>WDA.obj : error LNK2001: unresolved external symbol _zgemv_
+     1>example1.obj : error LNK2019: unresolved external symbol _sgemm_ referenced in function "void __cdecl arma::blas::gemm<double>(char const *,char const *,int const *,int const *,int const *,double const *,double const *,int const *,double const *,int const *,double const *,double *,int const *)" (??$gemm@N@blas@arma@@YAXPBD0PBH11PBN21212PAN1@Z)
+     1>WDA.obj : error LNK2001: unresolved external symbol _sgemm_
+     1>example1.obj : error LNK2019: unresolved external symbol _dgemm_ referenced in function "void __cdecl arma::blas::gemm<double>(char const *,char const *,int const *,int const *,int const *,double const *,double const *,int const *,double const *,int const *,double const *,double *,int const *)" (??$gemm@N@blas@arma@@YAXPBD0PBH11PBN21212PAN1@Z)
+     1>WDA.obj : error LNK2001: unresolved external symbol _dgemm_
+     1>example1.obj : error LNK2019: unresolved external symbol _cgemm_ referenced in function "void __cdecl arma::blas::gemm<double>(char const *,char const *,int const *,int const *,int const *,double const *,double const *,int const *,double const *,int const *,double const *,double *,int const *)" (??$gemm@N@blas@arma@@YAXPBD0PBH11PBN21212PAN1@Z)
+     1>WDA.obj : error LNK2001: unresolved external symbol _cgemm_
+     1>example1.obj : error LNK2019: unresolved external symbol _zgemm_ referenced in function "void __cdecl arma::blas::gemm<double>(char const *,char const *,int const *,int const *,int const *,double const *,double const *,int const *,double const *,int const *,double const *,double *,int const *)" (??$gemm@N@blas@arma@@YAXPBD0PBH11PBN21212PAN1@Z)
+     1>WDA.obj : error LNK2001: unresolved external symbol _zgemm_
+     1>example1.obj : error LNK2019: unresolved external symbol _ssyrk_ referenced in function "void __cdecl arma::blas::syrk<double>(char const *,char const *,int const *,int const *,double const *,double const *,int const *,double const *,double *,int const *)" (??$syrk@N@blas@arma@@YAXPBD0PBH1PBN212PAN1@Z)
+     1>WDA.obj : error LNK2001: unresolved external symbol _ssyrk_
+     1>example1.obj : error LNK2019: unresolved external symbol _dsyrk_ referenced in function "void __cdecl arma::blas::syrk<double>(char const *,char const *,int const *,int const *,double const *,double const *,int const *,double const *,double *,int const *)" (??$syrk@N@blas@arma@@YAXPBD0PBH1PBN212PAN1@Z)
+     1>WDA.obj : error LNK2001: unresolved external symbol _dsyrk_
+     1>example1.obj : error LNK2019: unresolved external symbol _sgesv_ referenced in function "void __cdecl arma::lapack::gesv<double>(int *,int *,double *,int *,int *,double *,int *,int *)" (??$gesv@N@lapack@arma@@YAXPAH0PAN00100@Z)
+     1>WDA.obj : error LNK2001: unresolved external symbol _sgesv_
+     1>example1.obj : error LNK2019: unresolved external symbol _dgesv_ referenced in function "void __cdecl arma::lapack::gesv<double>(int *,int *,double *,int *,int *,double *,int *,int *)" (??$gesv@N@lapack@arma@@YAXPAH0PAN00100@Z)
+     1>WDA.obj : error LNK2001: unresolved external symbol _dgesv_
+     1>example1.obj : error LNK2019: unresolved external symbol _cgesv_ referenced in function "void __cdecl arma::lapack::gesv<double>(int *,int *,double *,int *,int *,double *,int *,int *)" (??$gesv@N@lapack@arma@@YAXPAH0PAN00100@Z)
+     1>WDA.obj : error LNK2001: unresolved external symbol _cgesv_
+     1>example1.obj : error LNK2019: unresolved external symbol _zgesv_ referenced in function "void __cdecl arma::lapack::gesv<double>(int *,int *,double *,int *,int *,double *,int *,int *)" (??$gesv@N@lapack@arma@@YAXPAH0PAN00100@Z)
+     1>WDA.obj : error LNK2001: unresolved external symbol _zgesv_
+     1>example1.obj : error LNK2019: unresolved external symbol _sgels_ referenced in function "void __cdecl arma::lapack::gels<double>(char *,int *,int *,int *,double *,int *,double *,int *,double *,int *,int *)" (??$gels@N@lapack@arma@@YAXPADPAH11PAN121211@Z)
+     1>WDA.obj : error LNK2001: unresolved external symbol _sgels_
+     1>example1.obj : error LNK2019: unresolved external symbol _dgels_ referenced in function "void __cdecl arma::lapack::gels<double>(char *,int *,int *,int *,double *,int *,double *,int *,double *,int *,int *)" (??$gels@N@lapack@arma@@YAXPADPAH11PAN121211@Z)
+     1>WDA.obj : error LNK2001: unresolved external symbol _dgels_
+     1>example1.obj : error LNK2019: unresolved external symbol _cgels_ referenced in function "void __cdecl arma::lapack::gels<double>(char *,int *,int *,int *,double *,int *,double *,int *,double *,int *,int *)" (??$gels@N@lapack@arma@@YAXPADPAH11PAN121211@Z)
+     1>WDA.obj : error LNK2001: unresolved external symbol _cgels_
+     1>example1.obj : error LNK2019: unresolved external symbol _zgels_ referenced in function "void __cdecl arma::lapack::gels<double>(char *,int *,int *,int *,double *,int *,double *,int *,double *,int *,int *)" (??$gels@N@lapack@arma@@YAXPADPAH11PAN121211@Z)
+     1>WDA.obj : error LNK2001: unresolved external symbol _zgels_
+     1>C:\Users\gevah_000\Dropbox\Nadav\Work\MIT\non local funcationals\nlDFT - WDA\Debug\nlDFT - WDA.exe : fatal error LNK1120: 20 unresolved externals
+     1>Done Building Project "C:\Users\gevah_000\Dropbox\Nadav\Work\MIT\non local funcationals\nlDFT - WDA\nlDFT - WDA\nlDFT - WDA.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.53

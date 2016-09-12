@@ -1,0 +1,25 @@
+﻿Build started 9/19/2014 4:00:55 PM.
+     1>Project "C:\Users\gevahn\Dropbox\Nadav\Work\MIT\non local funcationals\nlDFT - WDA\nlDFT - WDA\nlDFT - WDA.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Users\gevahn\Dropbox\Nadav\Work\MIT\non local funcationals\nlDFT - WDA\armadillo-4.300.8\include" /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt ..\nlwda.cpp
+         nlwda.cpp
+     1>..\nlwda.cpp(85): warning C4018: '<' : signed/unsigned mismatch
+     1>..\nlwda.cpp(110): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\nlwda.cpp(116): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>..\nlwda.cpp(351): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>..\nlwda.cpp(103): warning C4101: 'value' : unreferenced local variable
+     1>..\nlwda.cpp(105): warning C4101: 'k_f_bdis' : unreferenced local variable
+     1>..\nlwda.cpp(103): warning C4101: 'k_fdis' : unreferenced local variable
+     1>..\nlwda.cpp(121): warning C4101: 'fp_x' : unreferenced local variable
+     1>..\nlwda.cpp(104): warning C4101: 'k_f_adis' : unreferenced local variable
+     1>..\nlwda.cpp(123): warning C4101: 'max_i' : unreferenced local variable
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\gevahn\Dropbox\Nadav\Work\MIT\non local funcationals\nlDFT - WDA\x64\Release\nlDFT - WDA.exe" /NOLOGO /LIBPATH:"C:\Users\gevahn\Dropbox\Nadav\Work\MIT\non local funcationals\nlDFT - WDA\armadillo-4.300.8\examples\lib_win64" /LIBPATH:"C:\Users\gevahn\Downloads\armadillo-4.400.2\armadillo-4.400.2\include" lapack_win64_MT.lib blas_win64_MT.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\gevahn\Dropbox\Nadav\Work\MIT\non local funcationals\nlDFT - WDA\x64\Release\nlDFT - WDA.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\gevahn\Dropbox\Nadav\Work\MIT\non local funcationals\nlDFT - WDA\x64\Release\nlDFT - WDA.lib" /MACHINE:X64 x64\Release\nlwda.obj
+         Generating code
+         Finished generating code
+         nlDFT - WDA.vcxproj -> C:\Users\gevahn\Dropbox\Nadav\Work\MIT\non local funcationals\nlDFT - WDA\x64\Release\nlDFT - WDA.exe
+     1>Done Building Project "C:\Users\gevahn\Dropbox\Nadav\Work\MIT\non local funcationals\nlDFT - WDA\nlDFT - WDA\nlDFT - WDA.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.10

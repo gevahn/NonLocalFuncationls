@@ -1,0 +1,18 @@
+﻿Build started 7/17/2014 3:37:48 PM.
+     1>Project "C:\Users\gevah_000\Dropbox\Nadav\Work\MIT\non local funcationals\nlDFT - WDA\nlDFT - WDA\nlDFT - WDA.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         F:\VS\VC\bin\x86_amd64\CL.exe /c /I"C:\Users\gevah_000\Downloads\armadillo-4.300.8\include" /Zi /nologo /W3 /WX- /sdl /O2 /D ARMA_USE_LAPACK /D ARMA_USE_BLAS /D _MBCS /Gm /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt "..\..\..\..\..\..\..\Downloads\armadillo-4.300.8\examples\example1.cpp"
+         example1.cpp
+     1>..\..\..\..\..\..\..\Downloads\armadillo-4.300.8\examples\example1.cpp(57): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\..\..\..\..\..\Downloads\armadillo-4.300.8\examples\example1.cpp(114): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\..\..\..\..\..\Downloads\armadillo-4.300.8\examples\example1.cpp(121): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\..\..\..\..\..\Downloads\armadillo-4.300.8\examples\example1.cpp(149): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\..\..\..\..\..\Downloads\armadillo-4.300.8\examples\example1.cpp(71): warning C4101: 'k_fdis' : unreferenced local variable
+       Link:
+         F:\VS\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\gevah_000\Dropbox\Nadav\Work\MIT\non local funcationals\nlDFT - WDA\x64\Debug\nlDFT - WDA.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\mingw64\x86_64-w64-mingw32\lib" /LIBPATH:"C:\Users\gevah_000\Downloads\armadillo-4.300.8\examples\lib_win64" /LIBPATH:"C:\Users\gevah_000\Downloads\armadillo-4.300.8\lib" lapack_win64_MT.lib blas_win64_MT.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\gevah_000\Dropbox\Nadav\Work\MIT\non local funcationals\nlDFT - WDA\x64\Debug\nlDFT - WDA.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\gevah_000\Dropbox\Nadav\Work\MIT\non local funcationals\nlDFT - WDA\x64\Debug\nlDFT - WDA.lib" /MACHINE:X64 x64\Debug\example1.obj
+         nlDFT - WDA.vcxproj -> C:\Users\gevah_000\Dropbox\Nadav\Work\MIT\non local funcationals\nlDFT - WDA\x64\Debug\nlDFT - WDA.exe
+     1>Done Building Project "C:\Users\gevah_000\Dropbox\Nadav\Work\MIT\non local funcationals\nlDFT - WDA\nlDFT - WDA\nlDFT - WDA.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.21

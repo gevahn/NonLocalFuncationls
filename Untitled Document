@@ -1,0 +1,68 @@
+   while ((abs(ne[itr]) > 0.1) && (itr < 100)){
+        s = solve(-B,g);
+        ns = norm(s);
+        x = x + s;
+        for (int i=0;i < n;i++){
+            y(i)=symnormintegral(rho_avec, tmp_vec, x_vec, y_vec, z_vec, w_vec, i);
+        }
+//        y = A*x-S;
+
+
+
+//        tmp = pow(norm(B.t()*g),3.0) / as_scalar(trust * g.t()*B*(B.t()*B)*B.t()*g);
+//        tau = min(1.0,tmp);
+//        s_c = -tau * (trust / norm(B.t()*g))*B.t()*g;
+
+//        if (sqrt(dot(s_c,s_c)) == trust)
+//            s = s_c;
+//        else {
+//            tmp_vec = solve(-B,g);
+
+//            tau = 0;
+//            s = s_c;
+//            while (dot(s,s) > trust && tau <= 1){
+//                tau += 0.05;
+//                s = s_c + tau * (tmp_vec - s_c);
+//            }
+//            tau -= 0.05;
+//            s = s_c + tau * (tmp_vec - s_c);
+//        }
+
+        for (int i=0;i < n;i++){
+            y(i)=symnormintegral(rho_avec, x + s, x_vec, y_vec, z_vec, w_vec, i);
+        }
+
+//        rho = (norm(g) - norm(y))/(norm(g) - norm(g + B * s));
+
+//        if (rho < 0.25)
+//            trust = 0.25 * ns;
+//        else
+//            if (rho > 3/4 && ns == trust)
+//                trust = min(2*trust , max_trust);
+//        if (rho > eta)
+//            x = x + s;
+
+        y = y - g;
+        g = y + g;
+        itr++;
+        ne[itr] = norm(g);
+        B = B + (y - B * s)*s.t()/ns;
+
+        y = g - y;
+//        for (int i = 0;i < n; i++){
+//            tmp_vec = x;
+//            tmp_vec(i) += delx;
+//            tmp = symnormintegral(rho_avec, tmp_vec, x_vec, y_vec, z_vec, w_vec, i);
+//            B(i,i) = (tmp - y(i)) / delx;
+////            B(i,i) = symnormintegral_d(rho_avec, x, x_vec, y_vec, z_vec, w_vec, i);
+//        }
+
+        if (cond(B2) > 10000000000000){
+            cout << "B2 singular at " << itr << endl;
+            break;
+        }
+
+        cout << "itr: " << itr << " error: " << ne[itr] <<" xvec: " << sqrt(dot(x,x)) <<endl;
+
+    }
+
